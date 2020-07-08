@@ -61,9 +61,11 @@
 }
 
 main{
-    position: relative;
-    top: 5em;
-    margin: 2em 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5em 8em;
 }
 
 /* ==================
@@ -172,7 +174,10 @@ author a{
 Article
 ============ */
 .main-article{
-    margin: 1em 6.5em;
+    position: relative;
+    width: 85rem;
+    margin: 1em 0;
+    padding: 0 18em;
     font: 1.25em/1.5 "imperialregular", sans-serif;
     color: #333;
 }
@@ -199,10 +204,7 @@ Article
 Styling the theory of inflation article 
 ===============*/
 .theory-of-inflation{
-    margin: 1em 0;
-    position: absolute;
-    width: 70vw;
-    left: calc(-30vw + 45%);
+    margin: 2em 0 0 calc(-1 * ((45vw - 70%) / 2));
 }
 
 .tof-grid-container{
@@ -222,6 +224,7 @@ Styling the theory of inflation article
 }
 
 .theory-of-inflation p{
+    width: 41em;
     font: 1em "cheltenhamregular", sans-serif;
     color: #666;
 }
@@ -276,4 +279,23 @@ Styling the theory of inflation article
     margin: 3.5em 0;
     font: 0.65em "Libre Franklin", sans-serif;
     color: #000;
+}
+
+/* Styling the figcaption of the embedded video */
+.stanford-video, .bicep-telescope{
+    margin: 3em 0;
+}
+.figure-caption{
+    font: 0.68em "imperialregular", sans-serif;
+    color: #666;
+}
+
+.credit{
+    font-size: 0.7em;
+    color: #888;
+}
+
+/*Styling the bicep telescope image */
+.bicep-telescope img{
+    width: 620px;
 }
