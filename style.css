@@ -86,21 +86,24 @@ main{
 
 /* Figure */
 .alan-guth-img{
-    display: inherit;
+    display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    width: 70em;
     margin: 1em 0;
     font: 0.8em/1.5 "imperialregular", sans-serif;
     color: #666;
+
 }
 
 .alan-guth-img img{
-    width: 70em;
+    vertical-align: top;
+    width: 100%;
 }
 
 .alan-guth-img figcaption{
-    margin: 1em 15em 0 0;
+    margin: 1em 0;
 }
 
 .author{
@@ -114,7 +117,6 @@ main{
     width: 40em;
     font-family: "Libre Franklin", sans-serif;
     color: #333;
-
 }
 
 author{
@@ -138,7 +140,7 @@ author a{
 }
 
 .article-info time{
-    font-size: 0.7em;
+    font-size: 0.75em;
 }
 
 .soc-med-buttons{
@@ -166,4 +168,112 @@ author a{
     background: #EEE;
 }
 
+/* ==========
+Article
+============ */
+.main-article{
+    margin: 1em 6.5em;
+    font: 1.25em/1.5 "imperialregular", sans-serif;
+    color: #333;
+}
 
+.main-article p{
+    margin-bottom: 1em;
+}
+
+.short-quote{
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+/* Article Links */
+.main-article p a{
+    color: #326891;
+}
+
+.main-article p a:hover{
+    text-decoration: none;
+}
+
+/* ============
+Styling the theory of inflation article 
+===============*/
+.theory-of-inflation{
+    margin: 1em 0;
+    position: absolute;
+    width: 70vw;
+    left: calc(-30vw + 45%);
+}
+
+.tof-grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    justify-self: center;
+    font: 0.65em/1.5 "Libre Franklin", sans-serif;
+    color: #000;
+}
+
+.tof-heading{
+    font: 1.1em "cheltenhamregular", sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+.theory-of-inflation p{
+    font: 1em "cheltenhamregular", sans-serif;
+    color: #666;
+}
+
+.main-idea{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 0.7em;
+}
+
+/* Inserting the images */
+[class $="-img-container"]{
+    height: 10em;
+    width: 15em;
+    margin-bottom: 0.5em;
+}
+
+.universe-img-container{
+    background: url("images/theory_of_inflation/universe.jpg") no-repeat center center/contain;
+}
+
+.not-enough-time-img-container{
+    background: url("images/theory_of_inflation/not_enough_time.jpg") no-repeat center center/contain;
+}
+
+.distant-coffee-img-container{
+    background: url("images/theory_of_inflation/distant_coffee.jpg") no-repeat center center/contain;
+}
+
+.coffee-everywhere-img-container{
+    background: url("images/theory_of_inflation/coffee_everywhere.jpg") no-repeat center center/contain;
+}
+
+.still-not-enough-time-img-container{
+    background: url("images/theory_of_inflation/still_not_enough_time.jpg") no-repeat center center/contain;
+}
+
+
+.inflation-img-container{
+    background: url("images/theory_of_inflation/inflation.jpg") no-repeat center center/contain;
+}
+
+.fluctuation-img-container{
+    background: url("images/theory_of_inflation/fluctuation.jpg") no-repeat center center/contain;
+}
+
+.expansion-img-container{
+    background: url("images/theory_of_inflation/expansion.jpg") no-repeat center center/contain;
+}
+
+.theory-of-inflation author{
+    margin: 3.5em 0;
+    font: 0.65em "Libre Franklin", sans-serif;
+    color: #000;
+}
