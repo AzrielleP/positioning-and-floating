@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    margin: 0;
+    padding: 0;
+}
+
+/* ==================
+    Menu bar
+  ===================*/
+
+.top-menu{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    height: 2.7em;
+    width: 100%;
+    padding: 0.5em 1em;
+    
+    border-bottom: 1px solid #E2E2E2;
+    background-color: #FFF;
+}
+
+.nav-icons i:last-child{
+    padding-left: 1.5em;
+}
+
+.web_logo{
+    height: 100%;
+    width: 12em;
+    background: url("images/nytimes_logo.png") no-repeat center center/cover;
+}
+
+.subscribe-login-buttons button{
+    height: 3em;
+    padding: 1em;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    text-align: center;
+    font: 0.6em "Libre Franklin", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #3A6C92;
+}
+
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    position: relative;
+    top: 5em;
+    margin: 2em 8em;
+}
+
+/* ==================
+    Header
+  ===================*/
+  header{
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+.page-title{
+    width: 60%;
+    margin: 0 1em 0.5em 1em;
+    font: 2.5em "cheltenhamregular", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Figure */
+.alan-guth-img{
+    display: inherit;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+    font: 0.8em/1.5 "imperialregular", sans-serif;
+    color: #666;
+}
+
+.alan-guth-img img{
+    width: 70em;
+}
+
+.alan-guth-img figcaption{
+    margin: 1em 15em 0 0;
+}
+
+.author{
+    font-size: 0.9em;
+    color: #888888;
+}
+
+/* Author and Publish Date */
+.article-info{
+    margin-top: 2em;
+    width: 40em;
+    font-family: "Libre Franklin", sans-serif;
+    color: #333;
+
+}
+
+author{
+    display: block;
+    margin-bottom: 2em;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+author a{
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+/*Date and Social Media Buttons */
+.date-and-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-info time{
+    font-size: 0.7em;
+}
+
+.soc-med-buttons{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style-type: none;
+}
+
+.soc-med-buttons li{
+    margin: 0.4em;
+    vertical-align: middle;
+}
+
+.soc-med-buttons li:first-child{
+    padding: 0.35em 0.65em;
+    border-radius: 50%;
+    background: #EEE;
+}
+
+.soc-med-buttons li:nth-child(n+2):nth-last-child(n+3){
+    padding: 0.3em .5em;
+    border-radius: 50%;
+    background: #EEE;
+}
+
+
