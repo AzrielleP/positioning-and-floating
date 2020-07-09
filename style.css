@@ -439,6 +439,7 @@ footer {
 
 .all-website-links a {
   text-decoration: none;
+  color: #000000;
 }
 
 .all-website-links a:hover {
