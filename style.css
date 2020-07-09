@@ -439,14 +439,13 @@ footer {
 
 .all-website-links a {
   text-decoration: none;
-  
 }
 
 .all-website-links a:hover {
   text-decoration: underline;
 }
 
-.all-website-links a:visited {
+.all-website-links a:visited:focus {
   color: #000000;
 }
 
@@ -508,4 +507,8 @@ footer {
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
+}
+
+.footer-links a:visited{
+    color:#666;
 }
