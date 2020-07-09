@@ -1,301 +1,510 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.main-container{
-    margin: 0;
-    padding: 0;
+.main-container {
+  margin: 0 4em;
+  padding: 0;
 }
 
 /* ==================
     Menu bar
   ===================*/
 
-.top-menu{
-    position: fixed;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1;
-    height: 2.7em;
-    width: 100%;
-    padding: 0.5em 1em;
-    
-    border-bottom: 1px solid #E2E2E2;
-    background-color: #FFF;
+.top-menu {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  height: 2.7em;
+  width: 100%;
+  padding: 0.5em 1em;
+
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #fff;
 }
 
-.nav-icons i:last-child{
-    padding-left: 1.5em;
+.nav-icons i:last-child {
+  padding-left: 1.5em;
 }
 
-.web_logo{
-    height: 100%;
-    width: 12em;
-    background: url("images/nytimes_logo.png") no-repeat center center/cover;
+.web_logo {
+  height: 100%;
+  width: 12em;
+  background: url("images/nytimes_logo.png") no-repeat center center/cover;
 }
 
-.subscribe-login-buttons button{
-    height: 3em;
-    padding: 1em;
-    border: none;
-    border-radius: 3px;
-    outline: none;
-    text-align: center;
-    font: 0.6em "Libre Franklin", sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #FFF;
-    background-color: #3A6C92;
+.subscribe-login-buttons button {
+  height: 3em;
+  padding: 1em;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  text-align: center;
+  font: 0.6em "Libre Franklin", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #3a6c92;
 }
 
-
-.main-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 5em 8em;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
 }
 
 /* ==================
     Header
   ===================*/
-  header{
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center;
-  }
+header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
 
-.page-title{
-    width: 60%;
-    margin: 0 1em 0.5em 1em;
-    font: 2.5em "cheltenhamregular", sans-serif;
-    font-style: italic;
-    font-weight: bold;
+.page-title {
+  width: 60%;
+  margin: 0 1em 0.5em 1em;
+  font: 2.5em "cheltenhamregular", sans-serif;
+  font-style: italic;
+  font-weight: bold;
 }
 
 /* Figure */
-.alan-guth-img{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    width: 70em;
-    margin: 1em 0;
-    font: 0.8em/1.5 "imperialregular", sans-serif;
-    color: #666;
-
+.alan-guth-img {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 70em;
+  margin: 1em 0;
+  font: 0.8em/1.5 "imperialregular", sans-serif;
+  color: #666;
 }
 
-.alan-guth-img img{
-    vertical-align: top;
-    width: 100%;
+.alan-guth-img img {
+  vertical-align: top;
+  width: 100%;
 }
 
-.alan-guth-img figcaption{
-    margin: 1em 0;
+.alan-guth-img figcaption {
+  margin: 1em 0;
 }
 
-.author{
-    font-size: 0.9em;
-    color: #888888;
+.author {
+  font-size: 0.9em;
+  color: #888888;
 }
 
 /* Author and Publish Date */
-.article-info{
-    margin-top: 2em;
-    width: 40em;
-    font-family: "Libre Franklin", sans-serif;
-    color: #333;
+.article-info {
+  margin-top: 2em;
+  width: 35em;
+  font-family: "Libre Franklin", sans-serif;
+  color: #333;
 }
 
-author{
-    display: block;
-    margin-bottom: 2em;
-    font-size: 0.9em;
-    font-weight: bold;
+author {
+  display: block;
+  margin-bottom: 1.7em;
+  font-size: 0.9em;
+  font-weight: bold;
 }
 
-author a{
-    text-decoration: none;
-    color: #333;
-    cursor: pointer;
+author a {
+  text-decoration: dotted;
+  color: #333;
+  cursor: pointer;
 }
 
 /*Date and Social Media Buttons */
-.date-and-buttons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.date-and-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.article-info time{
-    font-size: 0.75em;
+.article-info time {
+  font-size: 0.75em;
 }
 
-.soc-med-buttons{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
+.soc-med-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-    list-style-type: none;
+  list-style-type: none;
 }
 
-.soc-med-buttons li{
-    margin: 0.4em;
-    vertical-align: middle;
+.soc-med-buttons li {
+  margin: 0.4em;
+  vertical-align: middle;
 }
 
-.soc-med-buttons li:first-child{
-    padding: 0.35em 0.65em;
-    border-radius: 50%;
-    background: #EEE;
+.soc-med-buttons li:first-child {
+  padding: 0.35em 0.65em;
+  border-radius: 50%;
+  background: #eee;
 }
 
-.soc-med-buttons li:nth-child(n+2):nth-last-child(n+3){
-    padding: 0.3em .5em;
-    border-radius: 50%;
-    background: #EEE;
+.soc-med-buttons li:nth-child(n + 2):nth-last-child(n + 3) {
+  padding: 0.3em 0.5em;
+  border-radius: 50%;
+  background: #eee;
 }
 
 /* ==========
 Article
 ============ */
-.main-article{
-    position: relative;
-    width: 85rem;
-    margin: 1em 0;
-    padding: 0 18em;
-    font: 1.25em/1.5 "imperialregular", sans-serif;
-    color: #333;
+.main-article {
+  position: relative;
+  width: 80rem;
+  margin: 1em 0;
+  padding: 0 18em;
+  font: 1.25em/1.5 "imperialregular", sans-serif;
+  color: #333;
 }
 
-.main-article p{
-    margin-bottom: 1em;
+.main-article p {
+  margin-bottom: 1em;
 }
 
-.short-quote{
-    font-weight: bolder;
-    font-size: 1em;
+.short-quote {
+  font-weight: bolder;
+  font-size: 1em;
 }
 
 /* Article Links */
-.main-article p a{
-    color: #326891;
+.main-article p a {
+  color: #326891;
 }
 
-.main-article p a:hover{
-    text-decoration: none;
+.main-article p a:hover {
+  text-decoration: none;
 }
 
 /* ============
 Styling the theory of inflation article 
 ===============*/
-.theory-of-inflation{
-    margin: 2em 0 0 calc(-1 * ((45vw - 70%) / 2));
+.theory-of-inflation {
+  margin: 2em 0 0 calc(-1 * ((45vw - 70%) / 2));
 }
 
-.tof-grid-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
-    column-gap: 10px;
-    justify-self: center;
-    font: 0.65em/1.5 "Libre Franklin", sans-serif;
-    color: #000;
+.tof-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10px;
+  justify-self: center;
+  font: 0.65em/1.5 "Libre Franklin", sans-serif;
+  color: #000;
 }
 
-.tof-heading{
-    font: 1.1em "cheltenhamregular", sans-serif;
-    font-weight: bold;
-    color: #000;
+.tof-heading {
+  font: 1.1em "cheltenhamregular", sans-serif;
+  font-weight: bold;
+  color: #000;
 }
 
-.theory-of-inflation p{
-    width: 41em;
-    font: 1em "cheltenhamregular", sans-serif;
-    color: #666;
+.theory-of-inflation p {
+  width: 41em;
+  font: 1em "cheltenhamregular", sans-serif;
+  color: #666;
 }
 
-.main-idea{
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-right: 0.7em;
+.main-idea {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 0.7em;
 }
 
 /* Inserting the images */
-[class $="-img-container"]{
-    height: 10em;
-    width: 15em;
-    margin-bottom: 0.5em;
+[class$="-img-container"] {
+  height: 10em;
+  width: 15em;
+  margin-bottom: 0.5em;
 }
 
-.universe-img-container{
-    background: url("images/theory_of_inflation/universe.jpg") no-repeat center center/contain;
+.universe-img-container {
+  background: url("images/theory_of_inflation/universe.jpg") no-repeat center
+    center/contain;
 }
 
-.not-enough-time-img-container{
-    background: url("images/theory_of_inflation/not_enough_time.jpg") no-repeat center center/contain;
+.not-enough-time-img-container {
+  background: url("images/theory_of_inflation/not_enough_time.jpg") no-repeat
+    center center/contain;
 }
 
-.distant-coffee-img-container{
-    background: url("images/theory_of_inflation/distant_coffee.jpg") no-repeat center center/contain;
+.distant-coffee-img-container {
+  background: url("images/theory_of_inflation/distant_coffee.jpg") no-repeat
+    center center/contain;
 }
 
-.coffee-everywhere-img-container{
-    background: url("images/theory_of_inflation/coffee_everywhere.jpg") no-repeat center center/contain;
+.coffee-everywhere-img-container {
+  background: url("images/theory_of_inflation/coffee_everywhere.jpg") no-repeat
+    center center/contain;
 }
 
-.still-not-enough-time-img-container{
-    background: url("images/theory_of_inflation/still_not_enough_time.jpg") no-repeat center center/contain;
+.still-not-enough-time-img-container {
+  background: url("images/theory_of_inflation/still_not_enough_time.jpg")
+    no-repeat center center/contain;
 }
 
-
-.inflation-img-container{
-    background: url("images/theory_of_inflation/inflation.jpg") no-repeat center center/contain;
+.inflation-img-container {
+  background: url("images/theory_of_inflation/inflation.jpg") no-repeat center
+    center/contain;
 }
 
-.fluctuation-img-container{
-    background: url("images/theory_of_inflation/fluctuation.jpg") no-repeat center center/contain;
+.fluctuation-img-container {
+  background: url("images/theory_of_inflation/fluctuation.jpg") no-repeat center
+    center/contain;
 }
 
-.expansion-img-container{
-    background: url("images/theory_of_inflation/expansion.jpg") no-repeat center center/contain;
+.expansion-img-container {
+  background: url("images/theory_of_inflation/expansion.jpg") no-repeat center
+    center/contain;
 }
 
-.theory-of-inflation author{
-    margin: 3.5em 0;
-    font: 0.65em "Libre Franklin", sans-serif;
-    color: #000;
+.theory-of-inflation author {
+  margin: 3.5em 0;
+  font: 0.65em "Libre Franklin", sans-serif;
+  color: #000;
 }
 
 /* Styling the figcaption of the embedded video */
-.stanford-video, .bicep-telescope{
-    margin: 3em 0;
+.stanford-video,
+.bicep-telescope {
+  margin: 3em 0;
 }
-.figure-caption{
-    font: 0.68em "imperialregular", sans-serif;
-    color: #666;
+.figure-caption {
+  font: 0.68em "imperialregular", sans-serif;
+  color: #666;
 }
 
-.credit{
-    font-size: 0.7em;
-    color: #888;
+.credit {
+  font-size: 0.7em;
+  color: #888;
 }
 
 /*Styling the bicep telescope image */
-.bicep-telescope img{
-    width: 620px;
+.bicep-telescope img {
+  width: 620px;
+}
+
+/*============
+More Stories 
+============ */
+
+/*Containers */
+.other-articles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 16em);
+  grid-template-rows: 1fr 1fr;
+  column-gap: 0.9em;
+  row-gap: 0.9em;
+  margin: 1em 0;
+}
+
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(3, 16em);
+  column-gap: 0.9em;
+  margin: 1em 0;
+}
+
+.more-space-astronomy,
+.editors-pick {
+  border-top: 1px solid #000;
+  padding: 1em 0;
+}
+
+/*Contents*/
+
+.others-img img {
+  width: 16em;
+  background: no-repeat center center/cover;
+}
+
+.more-space-astronomy > a,
+.editors-pick > a {
+  font: bold 1em "Libre Franklin", sans-serif;
+  color: #000;
+  text-decoration: none;
+  margin: 2em 0;
+}
+
+.more-space-astronomy > a:hover,
+.editors-pick > a:hover {
+  text-decoration: underline;
+}
+
+.others-img figcaption {
+  font: 0.7em "cheltenhamregular", sans-serif;
+  color: #999;
+  text-align: right;
+}
+
+.story-title {
+  display: block;
+  font: 1.2em "cheltenhamregular", sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+[class$="-story"] time {
+  font: 0.7em "Libre Franklin", sans-serif;
+  color: #999;
+}
+
+/* Most Popular */
+.most-popular {
+  margin: 0 2em;
+  width: 20em;
+  border-top: 1px solid #000;
+}
+
+.most-popular p {
+  font: bold 1em "Libre Franklin", sans-serif;
+  color: #000;
+  margin: 1em 0;
+}
+
+.list-of-popular-articles li {
+  list-style-type: none;
+  border-top: 1px solid #888;
+  padding: 1em 0;
+}
+
+.list-of-popular-articles li a {
+  font: 1.3em "cheltenhamregular", sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+.list-of-popular-articles li a:hover {
+  color: #666;
+}
+
+/*===========
+ Footer 
+ =============*/
+footer {
+  width: 100%;
+  border-top: 3px double #aaa;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.logo-home-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+.logo-home-page .web_logo {
+  height: 1.5em;
+  width: 12em;
+}
+
+.home-page-link {
+  font-size: 0.7em;
+  text-decoration: none;
+  color: #3a6c92;
+}
+
+.all-website-links {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.all-website-links a {
+  text-decoration: none;
+}
+
+.all-website-links a:hover {
+  text-decoration: underline;
+}
+
+.all-website-links a:visited {
+  color: #000000;
+}
+
+.article-type-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+  width: 100%;
+  color: #000000;
+}
+
+.article-type {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.article-type-links ul {
+  list-style-type: none;
+  font-size: 0.8em;
+}
+
+.article-type-links ul li {
+  padding: 0.3em 0;
+}
+
+/* Subscribe section */
+.subscribe {
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: 1px solid #aaa;
+}
+
+.highlight {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.subs {
+  margin: 1em 0;
+  border-bottom: 1px solid #aaa;
+}
+
+.subs li,
+.others li {
+  margin: 0.5em 0;
+}
+
+.footer-links {
+  width: 100%;
+  padding: 2em 0;
+  border-top: 1px solid rgba(170, 170, 170, 0.685);
+  color: #666;
+  font-size: 0.6em;
+}
+
+.footer-links ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
 }
