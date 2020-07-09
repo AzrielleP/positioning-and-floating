@@ -412,6 +412,7 @@ footer {
   width: 100%;
   border-top: 3px double #aaa;
   font-family: "Libre Franklin", sans-serif;
+  color: #000000;
 }
 
 .logo-home-page {
@@ -439,7 +440,6 @@ footer {
 
 .all-website-links a {
   text-decoration: none;
-  color: #000000;
 }
 
 .all-website-links a:hover {
